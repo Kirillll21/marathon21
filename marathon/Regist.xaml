@@ -43,25 +43,25 @@
         <TextBlock
             FontSize="16"
             Text="Пожалуйста, заполните всю форму, чтобы зарегистрироваться в качестве бегуна." Margin="28.28,120,50,271" Grid.Column="1"/>
-        <TextBox Margin="118.28,160,428,232" Grid.Column="1"/>
-        <TextBox Margin="118.28,202,428,190" Grid.Column="1"/>
+        <TextBox Margin="118.28,160,428,232" Grid.Column="1" Name="TxbEmail"/>
+        <TextBox Margin="118.28,202,428,190" Grid.Column="1" Name="TxbPassword"/>
         <TextBlock Text="Почта:  " Margin="75.28,162,625,232" Grid.Column="1"/>
         <TextBlock Text="Пароль:" Margin="68.28,204,617,190" Grid.Column="1"/>
-        <TextBox Margin="118.28,245,428,147" Grid.Column="1"/>
+        <PasswordBox Margin="118.28,245,428,147" Grid.Column="1" Name="PsbPassword"/>
         <TextBlock Text="Повторите апроль:" Margin="8.28,247,620,147" Grid.Column="1"/>
-        <TextBox Margin="118.28,289,428,103" Grid.Column="1"/>
-        <TextBox Margin="118.28,331,428,58" Grid.Column="1"/>
+        <TextBox Margin="118.28,289,428,103" Grid.Column="1" Name="TxbName"/>
+        <TextBox Margin="118.28,331,428,58" Grid.Column="1" Name="TxbLastName"/>
         <TextBlock Text="Ваше имя:  " Margin="55.28,291,619,103" Grid.Column="1"/>
         <TextBlock Text="Ваша фамилия:  " Margin="24.28,331,625,63" Grid.Column="1"/>
         <TextBlock Text="Пол:  " Margin="398.28,160,302,234" Grid.Column="1"/>
         <TextBlock Text="Дата рождения:  " Margin="398.28,202,245,192" Grid.Column="1"/>
         <TextBlock Text="Страна:  " Margin="398.28,247,285,147" Grid.Column="1"/>
         <DatePicker HorizontalAlignment="Left" Margin="493.28,200,0,0" VerticalAlignment="Top" Height="29" Grid.Column="1"/>
-        <ComboBox Margin="432.28,158,206,232" Grid.Column="1">
+        <ComboBox Margin="432.28,158,206,232" Grid.Column="1" Name="CmbGender">
             <TextBlock>Мужской</TextBlock>
             <TextBlock>Женский</TextBlock>
         </ComboBox>
-        <ComboBox Margin="446.28,245,192,147" Grid.Column="1">
+        <ComboBox Margin="446.28,245,192,147" Grid.Column="1" Name="CmbCountry">
             <TextBlock><Run Text="Россия"/></TextBlock>
             <TextBlock><Run Text="Бразилия"/></TextBlock>
             <TextBlock><Run Text="Китай"/></TextBlock>
@@ -78,6 +78,8 @@
             Width="101"
             HorizontalAlignment="Center"
             Margin="388,331,249,58" Grid.Column="1" Click="Button_Click_2"/>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="629,162,0,0" VerticalAlignment="Top" Width="100" Name="Img"/>
+        <Button Content="Выбрать фото" Click="Button_Click_3" Grid.Column="1" HorizontalAlignment="Left" Margin="642,276,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>

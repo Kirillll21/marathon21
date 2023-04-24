@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -48,6 +49,18 @@ namespace marathon
             RegVerification regVerification = new RegVerification();
             regVerification.Show();
             this.Hide();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image files | *.bmp;*.jpg;*.jpeg;*png;*.tif| All files|*.*";
+            openFileDialog.FilterIndex = 1;
+            if (openFileDialog.ShowDialog() == true)
+            {
+                Uri imageUri = new Uri(openFileDialog.FileName);
+                Img.Source = new BitmapImage(imageUri);
+            }
         }
     }
 }
