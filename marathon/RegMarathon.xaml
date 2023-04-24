@@ -1,0 +1,89 @@
+﻿<Window x:Class="marathon.RegMarathon"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:marathon"
+        mc:Ignorable="d"
+        Title="Регистрация марафона" Height="450" Width="800">
+    <Grid>
+        <StackPanel Background="Gray" Margin="0,0,0,362">
+            <TextBlock
+                Foreground="White"
+                FontSize="13"
+                HorizontalAlignment="Center"
+                Margin="0,5,0,0"/>
+
+        </StackPanel>
+        <TextBlock Text="MARATHON SKILLS 2023"
+            Foreground="White"
+            FontSize="35"
+            HorizontalAlignment="Center"
+            Margin="122.14,0,244.86,362" Width="425"
+                       />
+        <Button Content="Назад"
+            FontSize="15"
+            Width="80"
+            HorizontalAlignment="Center"
+            Margin="5,8,707,381" Click="Button_Click"/>
+        <TextBlock Text="Регистрация марафона"
+            FontSize="24" Margin="263,72,245,308"/>
+        <StackPanel Background="Gray" Margin="-1,386,1,-1">
+            <TextBlock Text="18 дней 8 часов и 17 минут до старта марафона!"
+                Foreground="White"
+                FontSize="13"
+                HorizontalAlignment="Center"
+                Margin="251,5,251,0"/>
+
+        </StackPanel>
+        <TextBlock Text="Вид марафона"
+                   Foreground="DimGray"
+            FontSize="24" Margin="45,137,582,237"/>
+        <TextBlock Text="Варианты комплектов"
+            Foreground="DimGray"
+            FontSize="24" Margin="430,137,100,237"/>
+        <CheckBox Content="40km Полный марафон (120$)" HorizontalAlignment="Left" Margin="45,174,0,0" VerticalAlignment="Top"
+                  FontSize="16"/>
+        <CheckBox Content="20km Полумарафон (50$)" HorizontalAlignment="Left" Margin="45,198,0,0" VerticalAlignment="Top"
+                  FontSize="16"/>
+        <CheckBox Content="5km Малая дистанция (30$)" HorizontalAlignment="Left" Margin="45,222,0,0" VerticalAlignment="Top"
+                  FontSize="16"/>
+        <RadioButton Content="Вариант А (0$) Номер бегуна, браслет" HorizontalAlignment="Left" Margin="429,174,0,0" VerticalAlignment="Top"
+                     FontSize="16"/>
+        <RadioButton Content="Вариант В (20$) Бутылка воды, футболка" HorizontalAlignment="Left" Margin="429,201,0,0" VerticalAlignment="Top"
+                     FontSize="16"/>
+        <RadioButton Content="Вариант С (40$) Памятный сувенир, футболка" HorizontalAlignment="Left" Margin="428,227,0,0" VerticalAlignment="Top"
+                     FontSize="16"/>
+        <TextBlock Text="Детали спонсорства"
+            Foreground="DimGray"
+            FontSize="24" Margin="45,247,505,127"/>
+        <TextBlock Text="Взнос:  " Margin="45,292,684,102" FontSize="16"/>
+        <TextBlock Text="Сумма взноса:  " Margin="45,322,636,72" FontSize="16"/>
+        <ComboBox Margin="104,289,588,101">
+            <TextBlock><Run Text="Фонд кошек"/></TextBlock>
+            <TextBlock><Run Text="Фонд собак"/></TextBlock>
+            <TextBlock><Run Text="Фонд черепах"/></TextBlock>
+            <TextBlock><Run Text="Фонд слонов"/></TextBlock>
+        </ComboBox>
+        <TextBox Margin="159,322,542,70"/>
+        <Button Content="Logout"
+            FontSize="15"
+            Width="80"
+            HorizontalAlignment="Center"
+            Margin="701,8,11,381" Click="Button_Click"/>
+        <Button Content="Регистрация"
+            FontSize="15"
+            Width="115"
+            HorizontalAlignment="Center"
+            Margin="277,338,400,51"/>
+        <Button Content="Отмена"
+            FontSize="15"
+            Width="88"
+            HorizontalAlignment="Center"
+            Margin="404,338,300,51"/>
+        <TextBlock Text="Итоговый счет"
+            Foreground="DimGray"
+            FontSize="24" Margin="428,253,102,121"/>
+
+    </Grid>
+</Window>

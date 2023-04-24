@@ -1,0 +1,73 @@
+﻿<Window x:Class="marathon.ResRace"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:marathon"
+        mc:Ignorable="d"
+        Title="Результаты предыдущих гонок" Height="450" Width="800">
+    <Grid>
+        <StackPanel Background="Gray" Margin="0,0,0,362">
+            <TextBlock
+                Foreground="White"
+                FontSize="13"
+                HorizontalAlignment="Center"
+                Margin="0,5,0,0"/>
+
+        </StackPanel>
+        <TextBlock Text="MARATHON SKILLS 2023"
+            Foreground="White"
+            FontSize="35"
+            HorizontalAlignment="Center"
+            Margin="122.14,0,244.86,362" Width="425"
+                       />
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="10,11,0,0" VerticalAlignment="Top" Width="75" Height="29" FontSize="17" Click="Button_Click"/>
+        <TextBlock Text="Результаты предыдущих гонок"
+            Foreground="DimGray"
+            FontSize="25" Margin="222,62,204,312"/>
+        <StackPanel Background="Gray" Margin="-1,386,0,-1">
+            <TextBlock Text="18 дней 8 часов и 17 минут до старта марафона!"
+                Foreground="White"
+                FontSize="13"
+                HorizontalAlignment="Center"
+                Margin="251,5,251,0"/>
+
+        </StackPanel>
+        <TextBlock Text="Марафон:  " Margin="63,133,652,261"/>
+        <ComboBox Margin="122,129,528,261">
+            <TextBlock><Run Text="2014 - Япония"/></TextBlock>
+            <TextBlock><Run Text="2015 - Россия"/></TextBlock>
+            <TextBlock><Run Text="2015 - Бразилия"/></TextBlock>
+            <TextBlock><Run Text="2016 - США"/></TextBlock>
+        </ComboBox>
+        <TextBlock Text="Дистанция:  " Margin="55,186,660,208"/>
+        <ComboBox Margin="122,182,528,208">
+            <TextBlock><Run Text="40km Полный марафон"/></TextBlock>
+            <TextBlock><Run Text="20km Полумарафон"/></TextBlock>
+            <TextBlock><Run Text="5km Малая дистанция"/></TextBlock>
+        </ComboBox>
+        <TextBlock Text="Пол:  " Margin="500,133,215,261"/>
+        <ComboBox Margin="530,129,120,261">
+            <TextBlock><Run Text="Любой"/></TextBlock>
+            <TextBlock><Run Text="Мужской"/></TextBlock>
+            <TextBlock><Run Text="Женский"/></TextBlock>
+        </ComboBox>
+        <TextBlock Text="Категория:  " Margin="466,186,249,208"/>
+        <ComboBox Margin="530,182,120,208">
+            <TextBlock><Run Text="18-29 лет"/></TextBlock>
+            <TextBlock><Run Text="29-40 лет"/></TextBlock>
+            <TextBlock><Run Text="40-51 лет"/></TextBlock>
+        </ComboBox>
+        <Button Content="Поиск" HorizontalAlignment="Left" Margin="693,182,0,0" VerticalAlignment="Top" Width="75" Height="29"/>
+        <TextBlock Text="Всего бегунов:"
+            Foreground="DimGray"
+            FontSize="18" Margin="55,236,553,138"/>
+        <TextBlock Text="Всего бегунов финишировало:"
+            Foreground="DimGray"
+            FontSize="18" Margin="259,236,148,138"/>
+        <TextBlock Text="Среднее время:"
+            Foreground="DimGray"
+            FontSize="18" Margin="606,236,-199,138"/>
+
+    </Grid>
+</Window>

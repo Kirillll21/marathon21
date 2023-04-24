@@ -1,0 +1,83 @@
+﻿<Window x:Class="marathon.Regist"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:marathon"
+        mc:Ignorable="d"
+        Title="Страница регистрации" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="41*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Background="Gray" Margin="0,0,0,362" Grid.ColumnSpan="2">
+            <TextBlock
+                Foreground="White"
+                FontSize="13"
+                HorizontalAlignment="Center"
+                Margin="0,5,0,0"/>
+
+        </StackPanel>
+        <TextBlock Text="MARATHON SKILLS 2023"
+            Foreground="White"
+            FontSize="35"
+            HorizontalAlignment="Center"
+            Margin="68.28,0,245,362" Width="425" Grid.Column="1"
+                       />
+        <Button Content="Назад"
+            FontSize="15"
+            Width="80"
+            HorizontalAlignment="Center"
+            Margin="5,8,707,381" Click="Button_Click" Grid.ColumnSpan="2"/>
+        <StackPanel Background="Gray" Margin="0,386,0,-1" Grid.ColumnSpan="2">
+            <TextBlock Text="18 дней 8 часов и 17 минут до старта марафона!"
+                Foreground="White"
+                FontSize="13"
+                HorizontalAlignment="Center"
+                Margin="251,5,251,0"/>
+
+        </StackPanel>
+        <TextBlock Text="Регистрация бегуна"
+            FontSize="24" Margin="223.28,72,285,308" Grid.Column="1"/>
+        <TextBlock
+            FontSize="16"
+            Text="Пожалуйста, заполните всю форму, чтобы зарегистрироваться в качестве бегуна." Margin="28.28,120,50,271" Grid.Column="1"/>
+        <TextBox Margin="118.28,160,428,232" Grid.Column="1"/>
+        <TextBox Margin="118.28,202,428,190" Grid.Column="1"/>
+        <TextBlock Text="Почта:  " Margin="75.28,162,625,232" Grid.Column="1"/>
+        <TextBlock Text="Пароль:" Margin="68.28,204,617,190" Grid.Column="1"/>
+        <TextBox Margin="118.28,245,428,147" Grid.Column="1"/>
+        <TextBlock Text="Повторите апроль:" Margin="8.28,247,620,147" Grid.Column="1"/>
+        <TextBox Margin="118.28,289,428,103" Grid.Column="1"/>
+        <TextBox Margin="118.28,331,428,58" Grid.Column="1"/>
+        <TextBlock Text="Ваше имя:  " Margin="55.28,291,619,103" Grid.Column="1"/>
+        <TextBlock Text="Ваша фамилия:  " Margin="24.28,331,625,63" Grid.Column="1"/>
+        <TextBlock Text="Пол:  " Margin="398.28,160,302,234" Grid.Column="1"/>
+        <TextBlock Text="Дата рождения:  " Margin="398.28,202,245,192" Grid.Column="1"/>
+        <TextBlock Text="Страна:  " Margin="398.28,247,285,147" Grid.Column="1"/>
+        <DatePicker HorizontalAlignment="Left" Margin="493.28,200,0,0" VerticalAlignment="Top" Height="29" Grid.Column="1"/>
+        <ComboBox Margin="432.28,158,206,232" Grid.Column="1">
+            <TextBlock>Мужской</TextBlock>
+            <TextBlock>Женский</TextBlock>
+        </ComboBox>
+        <ComboBox Margin="446.28,245,192,147" Grid.Column="1">
+            <TextBlock><Run Text="Россия"/></TextBlock>
+            <TextBlock><Run Text="Бразилия"/></TextBlock>
+            <TextBlock><Run Text="Китай"/></TextBlock>
+            <TextBlock><Run Text="Япония"/></TextBlock>
+            <TextBlock><Run Text="Уругвай"/></TextBlock>
+        </ComboBox>
+        <Button Content="Отмена"
+            FontSize="15"
+            Width="88"
+            HorizontalAlignment="Center"
+            Margin="505.28,331,145,58" Grid.Column="1"/>
+        <Button Content="Регистрация"
+            FontSize="15"
+            Width="101"
+            HorizontalAlignment="Center"
+            Margin="388,331,249,58" Grid.Column="1" Click="Button_Click_2"/>
+
+    </Grid>
+</Window>

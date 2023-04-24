@@ -1,0 +1,77 @@
+﻿<Window x:Class="marathon.RedUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:marathon"
+        mc:Ignorable="d"
+        Title="Редактирование профиля" Height="450" Width="800">
+    <Grid>
+        <StackPanel Background="Gray" Margin="0,0,0,362">
+            <TextBlock
+                Foreground="White"
+                FontSize="13"
+                HorizontalAlignment="Center"
+                Margin="0,5,0,0"/>
+
+        </StackPanel>
+        <TextBlock Text="MARATHON SKILLS 2023"
+            Foreground="White"
+            FontSize="35"
+            HorizontalAlignment="Center"
+            Margin="122.14,0,244.86,362" Width="425"
+                       />
+        <Button Content="Назад"
+            FontSize="15"
+            Width="80"
+            HorizontalAlignment="Center"
+            Margin="5,8,707,381" Click="Button_Click"/>
+        <Button Content="Logout"
+            FontSize="15"
+            Width="80"
+            HorizontalAlignment="Center"
+            Margin="701,8,11,381" Click="Button_Click"/>
+        <StackPanel Background="Gray" Margin="-1,386,0,-1">
+            <TextBlock Text="18 дней 8 часов и 17 минут до старта марафона!"
+                Foreground="White"
+                FontSize="13"
+                HorizontalAlignment="Center"
+                Margin="251,5,251,0"/>
+
+        </StackPanel>
+        <TextBox Margin="100,150,500,242"/>
+        <TextBlock Text="Ваше имя:  " Margin="37,152,691,242"/>
+        <TextBlock Text="Ваша почта: the.email@address.com  " Margin="37,122,518,272"/>
+        <TextBox Margin="128,185,472,207"/>
+        <TextBlock Text="Ваша фамилия:  " Margin="37,188,659,206"/>
+        <TextBlock Text="Пол:  " Margin="58,222,676,172"/>
+        <ComboBox Margin="88,218,550,172">
+            <TextBlock><Run Text="Мужской"/></TextBlock>
+            <TextBlock><Run Text="Женский"/></TextBlock>
+        </ComboBox>
+        <TextBlock Text="Дата рождения:  " Margin="47,254,650,140"/>
+        <DatePicker HorizontalAlignment="Left" Margin="142,252,0,0" VerticalAlignment="Top" Height="29"/>
+        <TextBlock Text="Страна:  " Margin="94,288,643,106"/>
+        <ComboBox Margin="142,286,550,106">
+            <TextBlock><Run Text="Россия"/></TextBlock>
+            <TextBlock><Run Text="Бразилия"/></TextBlock>
+            <TextBlock><Run Text="Китай"/></TextBlock>
+            <TextBlock><Run Text="Япония"/></TextBlock>
+            <TextBlock><Run Text="Уругвай"/></TextBlock>
+        </ComboBox>
+        <TextBlock Text="Редактирование профиля"
+            Foreground="DimGray"
+            FontSize="25" Margin="222,62,204,312"/>
+        <TextBlock Text="Смена пароля"
+            Foreground="DimGray"
+            FontSize="20" Margin="579,113,49,261"/>
+        <TextBox Margin="564,207,36,185"/>
+        <TextBlock Text="Пароль:" Margin="514,209,225,185"/>
+        <TextBox Margin="564,250,36,142"/>
+        <TextBlock Text="Повторите апроль:" Margin="454,252,228,142"/>
+        <TextBlock Text="Оставьте эти поля, если не хотите менять пароль" Margin="511,152,0,242"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="273,320,0,0" VerticalAlignment="Top" Width="112" Height="30" FontSize="20"/>
+        <Button Content="Отмена" HorizontalAlignment="Left" Margin="395,320,0,0" VerticalAlignment="Top" Width="96" Height="30" FontSize="20"/>
+
+    </Grid>
+</Window>
